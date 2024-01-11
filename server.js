@@ -12,7 +12,11 @@ import cloudinary from 'cloudinary'
 import orderRoutes from "./routes/orderRoute.js";
 import statsRoutes from "./routes/miscellaneousRoute.js";
 import paymentRoutes from "./routes/paymentRoute.js";
-import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 
 //configure env
