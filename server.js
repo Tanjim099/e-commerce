@@ -64,7 +64,7 @@ app.use("/api/v1/stat", statsRoutes);
 // })
 
 app.use("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "./client/dist/index.htnl"));
+    res.sendFile(path.join(__dirname, "./client/dist/index.html"));
 })
 
 //port
